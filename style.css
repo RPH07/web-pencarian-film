@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00B4D8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #FDF0D5;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 110px;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #D4A373;
+    color: #FEFAE0;
+    box-shadow: none;
+    border-radius: 10px;
+    transition: box-shadow 0.7s;
+}
+
+button:hover{
+    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+    transition: 0.7s;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    color: #003049;
+}
+
+.loading-icon{
+    display: none;
+    width: 20px;
+    height: 20px
+}
+
+#movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
+    padding: 20px;
+}
+
+.error-message {
+    display: inline;
+    color: red;
+}
+
+
+.movie {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 15px 10px 0px 0px rgba(0,0,0,0.75);
+}
+
+.movie img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#searchTerm{
+    border-radius: 20px;
+    margin-right: 10px;
+    border: 1px solid burlywood;
+    box-shadow: 6px 7px 0px 0px rgba(0,0,0,0.75);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #393D3F;
+    background-color: white;
+    margin: 0;
+}
+
+footer h1{
+    font-size: 20px;
+    color: #00B4D8;
+    
+}
+
+footer a{
+    color: #393D3F;
+    text-decoration: none;
+}
+
+.copyright{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.social-media{
+    font-size: 22px;
+}
+
+.fa-heart{
+    color: red;
+}
+
+.fa-dribbble:hover{
+    color: pink;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h6{
+        font-size: 12px;
+    }
+}  
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+    
+    footer h1{
+        font-size: 20px;
+    }
+}
